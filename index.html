@@ -8,10 +8,9 @@
 </head>
 <body>
     <div class="container">
-        <!-- Шапка с секретной кнопкой -->
         <header class="header">
             <nav class="nav">
-                <span class="nav-brand" id="secretTrigger">Pravda</span>
+                <span class="nav-brand">Pravda</span>
                 <ul class="nav-menu">
                     <li><a href="index.html" class="active">Главная</a></li>
                     <li><a href="youtube-discord-roblox.html">Обход</a></li>
@@ -22,43 +21,31 @@
             </nav>
         </header>
 
-        <!-- Герой -->
         <main>
             <section class="hero">
                 <h1>Спокойный интернет без границ</h1>
                 <p class="hero-sub">Помогаем перемещаться в сети свободно. Работает в России, Турции и других странах.</p>
             </section>
 
-            <!-- Секретное фото кота (скрыто по умолчанию) -->
-            <div id="secretCat" class="secret-cat hidden">
-                <img src="https://cataas.com/cat" alt="Секретный кот">
-                <p>🐱 Мяу! Ты нажал 4 раза.</p>
-            </div>
-
-            <!-- Сетка карточек -->
             <div class="card-grid">
-                <!-- 1. Обход ютуба, дискорда, роблокса -->
                 <div class="card">
                     <h2>🚀 Обход ютуба, дискорда, роблокса</h2>
                     <p>Программа Zapret — проверенный способ вернуть доступ к популярным сервисам.</p>
                     <a href="youtube-discord-roblox.html" class="btn">Перейти к загрузке</a>
                 </div>
 
-                <!-- 2. Бесплатные VPN -->
                 <div class="card">
                     <h2>🔓 Бесплатные VPN</h2>
                     <p>Бот Telegram даёт 45 дней бесплатного VPN Happ. Без регистрации и смс.</p>
                     <a href="vpn.html" class="btn">Получить VPN</a>
                 </div>
 
-                <!-- 3. Глоссарий терминов -->
                 <div class="card">
                     <h2>📚 Глоссарий терминов</h2>
                     <p>DPI, VPN, Proxy, Tor, Zapret — простыми словами. Для новичков и не только.</p>
                     <a href="glossary.html" class="btn">Разобраться</a>
                 </div>
 
-                <!-- 4. Настройка Zapret (НОВАЯ) -->
                 <div class="card">
                     <h2>⚙️ Настройка Zapret</h2>
                     <p>Пошаговые инструкции для YouTube, Discord, Roblox. Решения конкретных проблем.</p>
@@ -66,7 +53,6 @@
                 </div>
             </div>
 
-            <!-- О проекте -->
             <section class="about-section">
                 <div class="about-content">
                     <h3>О проекте Pravda</h3>
@@ -80,25 +66,5 @@
             <p>© 2025 Pravda. Честный инструмент. Без рекламы.</p>
         </footer>
     </div>
-
-    <!-- Скрипт для секретного кота -->
-    <script>
-        let clickCount = 0;
-        const trigger = document.getElementById('secretTrigger');
-        const catDiv = document.getElementById('secretCat');
-
-        trigger.addEventListener('click', function() {
-            clickCount++;
-            if (clickCount === 4) {
-                catDiv.classList.remove('hidden');
-                clickCount = 0; // сброс после показа
-                
-                // Автоматически скрыть через 5 секунд
-                setTimeout(() => {
-                    catDiv.classList.add('hidden');
-                }, 5000);
-            }
-        });
-    </script>
 </body>
 </html>
