@@ -1,5 +1,4 @@
-/* GitHub-подобный стиль, квадратные края, без закруглений */
-
+/* ЧЕРНО-СЕРАЯ ТЕМА - GitHub-подобная, но темная */
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +7,8 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-    background-color: #ffffff;
-    color: #24292f;
+    background-color: #0d1117;  /* темный фон как у GitHub Dark */
+    color: #e6edf3;  /* светлый текст */
     line-height: 1.5;
 }
 
@@ -19,9 +18,9 @@ body {
     padding: 0 16px;
 }
 
-/* Шапка в стиле GitHub (без закруглений) */
+/* Шапка - темная */
 .header {
-    border-bottom: 1px solid #d0d7de;
+    border-bottom: 1px solid #3d444d;  /* темно-серая граница */
     margin-bottom: 24px;
     padding: 16px 0;
 }
@@ -36,7 +35,7 @@ body {
 .nav-brand {
     font-weight: 600;
     font-size: 20px;
-    color: #0969da;
+    color: #f78166;  /* оранжево-красный акцент (как у GitHub) */
     letter-spacing: 0.5px;
 }
 
@@ -48,7 +47,7 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #24292f;
+    color: #e6edf3;
     font-size: 14px;
     font-weight: 500;
     padding: 4px 0;
@@ -56,20 +55,20 @@ body {
 }
 
 .nav-menu a:hover {
-    color: #0969da;
-    border-bottom-color: #0969da;
+    color: #f78166;
+    border-bottom-color: #f78166;
 }
 
 .nav-menu a.active {
     font-weight: 600;
-    color: #0969da;
-    border-bottom-color: #0969da;
+    color: #f78166;
+    border-bottom-color: #f78166;
 }
 
-/* Герой (главная) */
+/* Герой */
 .hero {
     padding: 32px 0 24px;
-    border-bottom: 1px solid #d0d7de;
+    border-bottom: 1px solid #3d444d;
     margin-bottom: 32px;
 }
 
@@ -77,12 +76,12 @@ body {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 8px;
-    color: #0a0c10;
+    color: #ffffff;
 }
 
 .hero-sub {
     font-size: 18px;
-    color: #57606a;
+    color: #b1bac4;  /* серый */
 }
 
 /* Сетка карточек */
@@ -93,41 +92,40 @@ body {
     margin-bottom: 40px;
 }
 
-/* Карточка — строго квадратная (нет border-radius) */
+/* Карточки - темно-серые */
 .card {
-    border: 1px solid #d0d7de;
+    border: 1px solid #3d444d;
     padding: 24px;
-    background-color: #ffffff;
-    box-shadow: 0 1px 0 rgba(27,31,36,0.04);
-    transition: box-shadow 0.2s;
+    background-color: #151b23;  /* темно-серый, почти черный */
+    transition: border-color 0.2s;
     display: flex;
     flex-direction: column;
 }
 
 .card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-color: #656c76;  /* светлее при наведении */
 }
 
 .card h2 {
     font-size: 20px;
     margin-bottom: 12px;
     font-weight: 600;
-    color: #0a0c10;
+    color: #ffffff;
 }
 
 .card p {
-    color: #57606a;
+    color: #b1bac4;
     margin-bottom: 16px;
     flex: 1;
 }
 
-/* Кнопки — плоские, квадратные */
+/* Кнопки - темные */
 .btn {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #f6f8fa;
-    border: 1px solid #d0d7de;
-    color: #24292f;
+    background-color: #212830;  /* темно-серая */
+    border: 1px solid #3d444d;
+    color: #e6edf3;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -138,8 +136,8 @@ body {
 }
 
 .btn:hover {
-    background-color: #eaeef2;
-    border-color: #afb8c1;
+    background-color: #2d333b;
+    border-color: #656c76;
 }
 
 .btn-large {
@@ -151,15 +149,14 @@ body {
 }
 
 .btn-telegram {
-    background-color: #1c93e4;
-    border-color: #1c7ed6;
+    background-color: #1c4e6f;  /* темно-синий */
+    border-color: #296c94;
     color: white;
 }
 
 .btn-telegram:hover {
-    background-color: #0f7bcb;
-    border-color: #0c6eb3;
-    color: white;
+    background-color: #15527a;
+    border-color: #2f7da1;
 }
 
 /* Страницы с одной карточкой */
@@ -172,16 +169,16 @@ body {
     padding: 32px;
 }
 
-/* Бейджи (тэги) */
+/* Бейджи */
 .badge {
     display: inline-block;
     padding: 4px 10px;
     margin-right: 8px;
-    border: 1px solid #d0d7de;
-    background-color: #f6f8fa;
+    border: 1px solid #3d444d;
+    background-color: #212830;
     font-size: 12px;
     font-weight: 500;
-    color: #24292f;
+    color: #e6edf3;
 }
 
 .info-block {
@@ -190,8 +187,8 @@ body {
 
 /* Блок с Telegram ботом */
 .telegram-box {
-    background-color: #f6f8fa;
-    border: 1px solid #d0d7de;
+    background-color: #212830;
+    border: 1px solid #3d444d;
     padding: 16px;
     margin: 20px 0;
     display: flex;
@@ -206,7 +203,7 @@ body {
 .bot-name {
     font-size: 18px;
     font-weight: 600;
-    color: #0969da;
+    color: #f78166;  /* оранжевый акцент */
     background: none;
     border: none;
     font-family: monospace;
@@ -216,8 +213,8 @@ body {
 .footer {
     margin-top: 48px;
     padding: 24px 0 32px;
-    border-top: 1px solid #d0d7de;
-    color: #6e7781;
+    border-top: 1px solid #3d444d;
+    color: #8b949e;
     font-size: 12px;
     text-align: center;
 }
@@ -226,19 +223,20 @@ body {
 .about-section {
     margin: 32px 0 16px;
     padding: 24px;
-    background-color: #f6f8fa;
-    border: 1px solid #d0d7de;
+    background-color: #151b23;
+    border: 1px solid #3d444d;
 }
 
 .about-content h3 {
     font-size: 18px;
     margin-bottom: 12px;
     font-weight: 600;
+    color: #ffffff;
 }
 
 .small-text {
     font-size: 12px;
-    color: #57606a;
+    color: #8b949e;
     margin-top: 8px;
 }
 
@@ -248,7 +246,7 @@ body {
 }
 
 .text-link {
-    color: #0969da;
+    color: #f78166;
     text-decoration: none;
 }
 
@@ -274,31 +272,32 @@ body {
     }
 }
 
-/* Код, моноширинный */
+/* Код */
 code {
     font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
-    background-color: #f6f8fa;
+    background-color: #212830;
+    border: 1px solid #3d444d;
     padding: 0.2em 0.4em;
-    border: 1px solid #d0d7de;
     font-size: 85%;
+    color: #e6edf3;
 }
 
-/* Полное отсутствие border-radius — все квадратное */
+/* Полное отсутствие скруглений */
 * {
     border-radius: 0 !important;
 }
 
-/* Логотип Happ как текст */
+/* Логотип Happ */
 .vpn-logo-placeholder {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 12px;
-    color: #0a0c10;
+    color: #ffffff;
 }
 
 .footnote {
     font-size: 12px;
-    color: #6e7781;
+    color: #8b949e;
     margin-top: 16px;
     text-align: center;
 }
