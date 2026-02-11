@@ -301,3 +301,120 @@ code {
     margin-top: 16px;
     text-align: center;
 }
+
+/* ===== СЕКРЕТНЫЙ КОТ ===== */
+.secret-cat {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #151b23;
+    border: 2px solid #f78166;
+    padding: 20px;
+    z-index: 9999;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+.secret-cat img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #3d444d;
+}
+
+.secret-cat p {
+    margin-top: 12px;
+    color: #f78166;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ===== СТИЛИ ДЛЯ НАСТРОЙКИ ZAPRET ===== */
+.setup-card {
+    border: 1px solid #3d444d;
+    background-color: #151b23;
+    margin-bottom: 24px;
+}
+
+.setup-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    background-color: #1f252d;
+    border-bottom: 1px solid #3d444d;
+}
+
+.setup-icon {
+    font-size: 24px;
+}
+
+.setup-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.setup-content {
+    padding: 20px;
+}
+
+.problem, .solution, .tip {
+    margin-bottom: 20px;
+}
+
+.solution-badge {
+    background-color: #1f4a3d;
+    border-color: #2a6b57;
+    color: #b5f0e6;
+}
+
+.tip-badge {
+    background-color: #3d3d1a;
+    border-color: #8b8b3a;
+    color: #ffffb3;
+}
+
+.steps, .tips-list {
+    padding-left: 24px;
+    color: #b1bac4;
+}
+
+.steps li, .tips-list li {
+    margin-bottom: 8px;
+}
+
+.steps a {
+    color: #f78166;
+    text-decoration: none;
+}
+
+.steps a:hover {
+    text-decoration: underline;
+}
+
+.code-block {
+    background-color: #0d1117;
+    border: 1px solid #3d444d;
+    padding: 16px;
+    color: #e6edf3;
+    font-family: monospace;
+    margin: 16px 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.download-block {
+    margin: 32px 0;
+    text-align: center;
+}
+
+/* Обновление навигации */
+.nav-menu {
+    flex-wrap: wrap;
+}
