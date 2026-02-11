@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravda · Глоссарий терминов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <span class="nav-brand">Pravda</span>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="youtube-discord-roblox.html">Обход</a></li>
+                    <li><a href="vpn.html">VPN</a></li>
+                    <li><a href="glossary.html" class="active">Глоссарий</a></li>
+                    <li><a href="censorship-map.html">Карта цензуры</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page-header">
+                <h1>📘 Глоссарий терминов</h1>
+                <p>Простые объяснения сложных слов. Для тех, кто хочет разобраться.</p>
+            </section>
+
+            <!-- Список терминов - карточки -->
+            <div class="glossary-list">
+                <!-- DPI -->
+                <div class="glossary-item">
+                    <div class="glossary-term">DPI (Deep Packet Inspection)</div>
+                    <div class="glossary-definition">
+                        <span class="term-badge">Глубокий анализ пакетов</span>
+                        <p>Технология, которую используют провайдеры, чтобы видеть, какие сайты вы открываете. Именно DPI блокирует YouTube, Discord и Telegram. Zapret и VPN обманывают DPI.</p>
+                    </div>
+                </div>
+
+                <!-- VPN -->
+                <div class="glossary-item">
+                    <div class="glossary-term">VPN</div>
+                    <div class="glossary-definition">
+                        <span class="term-badge">Виртуальная частная сеть</span>
+                        <p>Шифрует весь трафик и прячет его от провайдера. Вы подключаетесь к серверу в другой стране, и для всех вы находитесь там. Happ, Watt, TunnelBear — это VPN.</p>
+                    </div>
+                </div>
+
+                <!-- Proxy -->
+                <div class="glossary-item">
+                    <div class="glossary-term">Прокси (Proxy)</div>
+                    <div class="glossary-definition">
+                        <span class="term-badge">Посредник</span>
+                        <p>Работает только для браузера или одного приложения. Быстрее VPN, но менее безопасно. Подходит для чтения новостей, не подходит для банков.</p>
+                    </div>
+                </div>
+
+                <!-- Tor -->
+                <div class="glossary-item">
+                    <div class="glossary-term">Tor</div>
+                    <div class="glossary-definition">
+                        <span class="term-badge">Луковая маршрутизация</span>
+                        <p>Бесплатно, анонимно, медленно. Трафик прыгает через 3+ сервера по всему миру. Хорошо для тех, кому важна скрытность. Не подходит для видео.</p>
+                    </div>
+                </div>
+
+                <!-- Zapret -->
+                <div class="glossary-item">
+                    <div class="glossary-term">Zapret / byedpi</div>
+                    <div class="glossary-definition">
+                        <span class="term-badge">Обход DPI</span>
+                        <p>Российская разработка. Не шифрует, а "путает" DPI, меняя пакеты данных. Работает быстрее VPN, бесплатно, не требует регистрации. Идеально для YouTube.</p>
+                    </div>
+                </div>
+
+                <!-- GoodbyeDPI -->
+                <div class="glossary-item">
+                    <div class="glossary-term">GoodbyeDPI</div>
+                    <div class="glossary-definition">
+                        <span class="term-badge">Предок Zapret</span>
+                        <p>Аналогичный инструмент от разработчика ValdikSS. Zapret — более удобная версия с графическим интерфейсом.</p>
+                    </div>
+                </div>
+
+                <!-- Smart DNS -->
+                <div class="glossary-item">
+                    <div class="glossary-term">Smart DNS</div>
+                    <div class="glossary-definition">
+                        <span class="term-badge">Умный DNS</span>
+                        <p>Обходит блокировки на уровне DNS-запросов. Работает на приставках, Smart TV, PlayStation. Не тормозит видео.</p>
+                    </div>
+                </div>
+
+                <!-- Блокировка -->
+                <div class="glossary-item">
+                    <div class="glossary-term">Блокировка по IP</div>
+                    <div class="glossary-definition">
+                        <span class="term-badge">Старый метод</span>
+                        <p>Когда сайт целиком запрещают по его IP-адресу. Сейчас редко используется, потому что легко обходится сменой IP.</p>
+                    </div>
+                </div>
+
+                <!-- SNI блокировка -->
+                <div class="glossary-item">
+                    <div class="glossary-term">SNI-блокировка</div>
+                    <div class="glossary-definition">
+                        <span class="term-badge">Современный метод</span>
+                        <p>Провайдер смотрит на имя сайта в начале соединения (например, youtube.com) и режет его. Zapret умеет подменять SNI.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-link">
+                <a href="index.html" class="text-link">← Вернуться на главную</a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Pravda · Термины обновлены в феврале 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
