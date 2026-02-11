@@ -10,7 +10,7 @@
     <div class="container">
         <header class="header">
             <nav class="nav">
-                <span class="nav-brand" id="secretTrigger">Pravda</span>
+                <span class="nav-brand">Pravda</span>
                 <ul class="nav-menu">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="youtube-discord-roblox.html">Обход</a></li>
@@ -21,19 +21,12 @@
             </nav>
         </header>
 
-        <!-- Секретный кот (на всех страницах) -->
-        <div id="secretCat" class="secret-cat hidden">
-            <img src="https://cataas.com/cat" alt="Секретный кот">
-            <p>🐱 Мяу! Ты нажал 4 раза.</p>
-        </div>
-
         <main>
             <section class="page-header">
                 <h1>⚙️ Настройка Zapret</h1>
                 <p>Конкретные инструкции для разных сервисов. Без воды.</p>
             </section>
 
-            <!-- YouTube -->
             <div class="setup-card">
                 <div class="setup-header">
                     <span class="setup-icon">▶️</span>
@@ -62,7 +55,6 @@
                 </div>
             </div>
 
-            <!-- Discord -->
             <div class="setup-card">
                 <div class="setup-header">
                     <span class="setup-icon">💬</span>
@@ -89,7 +81,6 @@
                 </div>
             </div>
 
-            <!-- Roblox -->
             <div class="setup-card">
                 <div class="setup-header">
                     <span class="setup-icon">🎮</span>
@@ -113,7 +104,6 @@
                 </div>
             </div>
 
-            <!-- Roblox детальный гайд -->
             <div class="setup-card">
                 <div class="setup-header">
                     <span class="setup-icon">🛠️</span>
@@ -135,7 +125,6 @@
                 </div>
             </div>
 
-            <!-- Общие советы -->
             <div class="setup-card">
                 <div class="setup-header">
                     <span class="setup-icon">💡</span>
@@ -152,7 +141,6 @@
                 </div>
             </div>
 
-            <!-- Ссылка на скачивание -->
             <div class="download-block">
                 <a href="https://github.com/Flowseal/zapret-discord-youtube" class="btn btn-large" target="_blank">
                     📥 Скачать Zapret (Flowseal)
@@ -168,26 +156,5 @@
             <p>© 2025 Pravda · Инструкции проверены 10.02.2025</p>
         </footer>
     </div>
-
-    <!-- Скрипт для секретного кота (копируем на каждую страницу) -->
-    <script>
-        let clickCount = 0;
-        const trigger = document.getElementById('secretTrigger');
-        const catDiv = document.getElementById('secretCat');
-
-        if (trigger) {
-            trigger.addEventListener('click', function() {
-                clickCount++;
-                if (clickCount === 4) {
-                    catDiv.classList.remove('hidden');
-                    clickCount = 0;
-                    
-                    setTimeout(() => {
-                        catDiv.classList.add('hidden');
-                    }, 5000);
-                }
-            });
-        }
-    </script>
 </body>
 </html>
